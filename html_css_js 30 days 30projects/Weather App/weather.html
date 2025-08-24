@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=b , initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="weather.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- WEATHER APP -->
+
+    <div class="container_weather">
+      <!-- search bar -->
+      <div class="search">
+        <input id="search" type="text" placeholder="Search..." />
+        <i id="search_btn" class="fas fa-search"></i>
+      </div>
+      <div class="error_msg">
+        <p id="error">City Not Found</p>
+
+      </div>
+
+      <div class="weather_data">
+        <img
+          src="./rain-weather-cloud-clip-art-png-favpng-YjHTvzwmCwhbGEgVxhwgAZp8i.jpg"
+          alt="cloud"
+          class="icon"
+        />
+        <h1 id="city">KARACHI</h1>
+        <p id="temp">12° C</p>
+
+        <div class="weather_detail">
+          <div class="weather_detail_item">
+            <img src="./954b2cfeacbf633b9a26044cc8c84f75.png" alt="" />
+            
+              <div>
+                <p id="humidity">50%</p>
+                <p>Humidity</p>
+              </div>
+            
+            <div class="weather_detail_item1">
+              <img src="./7a07ef5c2d676eaf7d38be711874ff0d.png" alt="" />
+              <div>
+                <p id="wind">15 km/h</p>
+                <p>wind</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="weather.js"></script>
+  </body>
+</html>
