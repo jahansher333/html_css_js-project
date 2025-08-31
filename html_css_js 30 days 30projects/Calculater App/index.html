@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculater App</title>
+    <link rel="stylesheet" href="Calculater.css">
+</head>
+<body>
+    <div class="calculator">
+      <div>
+          <div class="display">
+            <input type="text" id="result" disabled>
+          </div>
+          <div class="buttons">
+            <div>
+              <button onclick="apendtodiplay('1')">1</button>
+              <button onclick="apendtodiplay('2')">2</button>
+              <button onclick="apendtodiplay('3')">3</button>
+              <button  onclick="apendtodiplay('+')"class="yellow">+</button>
+            </div>
+            <div>
+              <button onclick="apendtodiplay('4')">4</button>
+              <button onclick="apendtodiplay('5')">5</button>
+              <button onclick="apendtodiplay('6')">6</button>
+              <button onclick="apendtodiplay('-')" class="yellow">-</button>
+            </div>
+            <div>
+              <button onclick="apendtodiplay('7')">7</button>
+              <button onclick="apendtodiplay('8')">8</button>
+              <button onclick="apendtodiplay('9')">9</button>
+              <button onclick="apendtodiplay('*')" class="yellow">*</button>
+            </div>
+            <div>
+              <button onclick="apendtodiplay('0')">0</button>
+              <button onclick="cleardisplay()">C</button>
+              <button onclick="calulate()">=</button>
+              <button onclick="apendtodiplay('/')" class="yellow">/</button>
+            </div>
+          </div>
+      </div>
+    </div>
+<script src="calculater.js"></script>
+</body>
+</html>
