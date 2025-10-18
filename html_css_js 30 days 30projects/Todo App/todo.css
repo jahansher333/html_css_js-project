@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;  
+}
+body{
+  background-color: rgb(204, 0, 255);
+}
+
+
+.title{
+    text-align: center;
+    margin-top: 40px;
+    font-size: 50px;
+    font-weight: 900;
+}
+.todo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.input-group{
+    width: 50%;
+    height: 45px;
+    background-color: rgb(248, 237, 237);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    
+}
+
+.input-group input{
+    width: 100%;
+    height: 100%;
+    padding: 0 10px;
+    border: none;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background: none;
+    outline: none;
+    font-size: 16px;
+    
+}
+
+.input-group button{
+    padding: 3px 10px;
+    height: 45px;
+    border: none;
+    background: none;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: blue;
+    transition: background-color 0.3s ease;
+    /* border-top-left-radius: 20px; */
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.input-group button:hover{
+    background-color: rgb(104, 104, 211);
+}
+
+#todo-list{
+    overflow-y: auto;
+}
+
+
+li{
+    margin: 20px;
+    width: 40vw;
+    height: 40px;
+    list-style: none;
+    font-size: 30px;
+    border-radius: 20px;
+    padding:7px;
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+    background-color: rgba(255, 255, 255, 0.15);
+    gap: 70px;
+    backdrop-filter: blur(12px);
+    box-shadow: 0 8px 25px rgb(20, 28, 138);
+}
+
+li input[type="checkbox"]{
+    accent-color: #419c0c;
+    transform: scale(1.3);
+    margin-right: 10px;
+}
+li input[type="checkbox"]:checked + span{
+    transition: all 0.3s ease ;
+    color: #e0dddd;
+    text-decoration: line-through;
+}
+
+li:hover{
+    background-color: rgba(221, 12, 12, 0.15);
+    backdrop-filter: blur(3px);
+    box-shadow: #419c0c;
+    transform: all 0.3s ease;
+}
+
+li span{
+    color: rgb(22, 22, 22);
+    font-size: 20px;
+    font-weight: 300;
+    transition: color ;
+    flex: 1;
+    cursor: pointer;
+    
+}
+
+
+
+li button{
+    width: 50px;
+    height: 24px;
+    background: rgba(226, 57, 6, 0.842) ;
+    border: 1px solid rgba(172, 20, 20, 0.788);
+    border-radius: 5px;
+    font-size: 13px;
+    color: #fff;
+}
+
+li button:hover{
+    background-color: rgba(151, 68, 42, 0.842);
+    transform: scale(1.2);
+}
+
+li {
+    animation: fadein 0.4s ease  forwards;
+
+}
+
+@keyframes fadein{
+    from{
+        opacity: 0;
+        transform: translateY(8px);
+    }
+    to {
+             opacity: 1;
+             transform: translateY(0px);
+    }
+}
+
+
